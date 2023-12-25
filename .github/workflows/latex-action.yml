@@ -1,0 +1,17 @@
+name: latex-action
+
+on:
+  push:
+    branches: [master]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v4"
+      - name: Produce LaTeX PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: xkeymask.tex
+          latexmk_shell_escape: true
