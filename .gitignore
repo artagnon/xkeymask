@@ -1,0 +1,8 @@
+*.aux
+*.fls
+*.log
+*.out
+*.hd
+_minted*/
+*.fdb_latexmk
+*.pdf
